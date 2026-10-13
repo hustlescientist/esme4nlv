@@ -1,36 +1,31 @@
-# Esmeralda Villeda | North Las Vegas Ward 1
+# Esmeralda Villeda — North Las Vegas Ward 1
 
-Static **English/Spanish single-page website demo** for Esmeralda Villeda's North Las Vegas City Council Ward 1 campaign.
+Static, bilingual (English/Spanish) single-page website demo for the Esmeralda Villeda campaign.
 
-**Demo URL (after GitHub Pages is enabled):** https://hustlescientist.github.io/esme4nlv/
+**Demo URL once Pages is enabled:** https://hustlescientist.github.io/esme4nlv/
 
-## Deployment (no custom GitHub Actions)
+## GitHub Pages configuration — no custom GitHub Actions
 
-This repo uses the static **gh-pages branch**, deployed from its **/(root)** directory. No `.github/workflows` files or GitHub Actions-based site builders are required.
+This repository contains two branches:
 
-For initial setup in **Settings → Pages**:
-1. Under **Build and deployment**, select **Deploy from a branch**.
-2. Select **gh-pages** and **/(root)**, then **Save**.
-3. Wait for GitHub Pages to finish publishing, then open the demo URL above.
+- **`main`** — source HTML plus a reference `GHL-PASTE-IN.html` block for GoHighLevel.
+- **`gh-pages`** — deployable static site in the branch root (`index.html` and `.nojekyll`).
 
-Static assets are embedded or loaded from the campaign's existing image CDN; there is no build step.
+**One-time setup:** Go to [Settings → Pages](https://github.com/hustlescientist/esme4nlv/settings/pages), under **Build and deployment** choose **Deploy from a branch**, select **`gh-pages`** and **`/(root)`**, then **Save**. GitHub will publish the static site. This project does **not** use a custom workflow, build system, or `.github/workflows` files. GitHub may still show its internally managed Pages deployment activity.
 
-## Site features
+## Site
 
-- Responsive sticky navigation and mobile menu
-- Instant EN/ES switching via JavaScript (with URL/history support)
-- Candidate story, issues, endorsement groups, campaign announcements and ActBlue links
-- The supplied, real HighLevel opt-in iframe (form ID `bNfm16tjccR3VPuBa7u4`)
-- Keyboard navigation and reduced-motion support
+- Original campaign masthead, portrait, colors, endorsements, and announcement cards
+- Responsive sticky header and mobile navigation
+- Instant in-page English/Spanish toggle
+- Integrated LeadConnector form `bNfm16tjccR3VPuBa7u4`
+- Links to campaign information and ActBlue donation destination
+- Demo marked `noindex, follow` to avoid search competition with the official campaign website
 
-> **Demo caution:** The opt-in iframe is a real embedded campaign form. Submitting it may create or update a live campaign CRM contact. Do not use fake or unauthorized test contact details.
+**Important:** The embedded LeadConnector form is live. Submitted contact details can be received by the actual campaign CRM. Its field labels are maintained in HighLevel.
 
-## Editing
+## Updates
 
-- `index.html`: full standalone demo.
-- `GHL-PASTE-IN.html`: version intended for a HighLevel Custom HTML element.
-- `.nojekyll`: keeps Pages serving the static files directly.
+Update `index.html` on `main` and copy the revised static site to the root of `gh-pages` to update the public demo. The `GHL-PASTE-IN.html` file is a separate fragment for the HighLevel editor and is not the GitHub Pages entrypoint.
 
-The standalone demo includes `noindex, nofollow` metadata to avoid competing with the official campaign site.
-
-Original campaign site: https://esmefornlv.com/
+Original website: https://esmefornlv.com/
