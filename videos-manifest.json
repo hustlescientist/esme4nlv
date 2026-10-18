@@ -1,0 +1,133 @@
+{
+  "sourceFiles": [
+    "esmefornlv-youtube-videos.csv",
+    "Esme for NLV YouTube video caption table.md"
+  ],
+  "collectedDate": "2026-10-18",
+  "channel": "https://www.youtube.com/@EsmeforNLV",
+  "captionCaveat": "The uploaded notes describe visible on-screen text overlays; these are not word-for-word audio captions.",
+  "videoCount": 10,
+  "notes": "Two public-safety videos share closely related on-screen material; both unique video IDs are retained.",
+  "videos": [
+    {
+      "sourceOrder": 1,
+      "video_id": "F3QGeMnE2Vc",
+      "video_url": "https://www.youtube.com/watch?v=F3QGeMnE2Vc",
+      "original_title": "Por nuestras familias y nuestra comunidad | Vota Villeda",
+      "topic": "community",
+      "spoken_language": "es",
+      "display_title_en": "For Our Families and Community",
+      "display_title_es": "Por nuestras familias y nuestra comunidad",
+      "description_en": "A Spanish-language video about Esmeralda's roots, family unity, homeownership and affordability.",
+      "description_es": "Un video en español sobre las raíces de Esmeralda, la unión familiar, la vivienda propia y el costo de vida."
+    },
+    {
+      "sourceOrder": 2,
+      "video_id": "pd_VH1TB5rk",
+      "video_url": "https://www.youtube.com/watch?v=pd_VH1TB5rk",
+      "original_title": "North Las Vegas Raised - Serving This Community is Deeply Personal - Vote Villeda for NLV Ward 1",
+      "topic": "story",
+      "spoken_language": "en",
+      "display_title_en": "North Las Vegas Raised",
+      "display_title_es": "Criada en North Las Vegas",
+      "description_en": "Esmeralda connects her upbringing, hardworking family and community mentors to her service.",
+      "description_es": "Esmeralda relaciona su infancia, su familia trabajadora y sus mentores comunitarios con su vocación de servicio."
+    },
+    {
+      "sourceOrder": 3,
+      "video_id": "7yUroGzNZEg",
+      "video_url": "https://www.youtube.com/watch?v=7yUroGzNZEg",
+      "original_title": "Housing Affordability in North Las Vegas",
+      "topic": "housing",
+      "spoken_language": "en",
+      "display_title_en": "Housing Affordability in North Las Vegas",
+      "display_title_es": "Vivienda asequible en North Las Vegas",
+      "description_en": "She discusses housing options and multifamily projects from her planning commission experience.",
+      "description_es": "Habla sobre opciones de vivienda y proyectos multifamiliares de su experiencia en la Comisión de Planificación."
+    },
+    {
+      "sourceOrder": 4,
+      "video_id": "pMvc6uPnBEY",
+      "video_url": "https://www.youtube.com/watch?v=pMvc6uPnBEY",
+      "original_title": "Action Over Words - Esmeralda Villeda for North Las Vegas Ward 1",
+      "topic": "housing",
+      "spoken_language": "en",
+      "display_title_en": "Action Over Words",
+      "display_title_es": "Hechos, no palabras",
+      "description_en": "A campaign message about rising living costs, housing supply and turning discussion into action.",
+      "description_es": "Un mensaje sobre el costo de vida, la oferta de viviendas y cómo pasar de las palabras a los hechos."
+    },
+    {
+      "sourceOrder": 5,
+      "video_id": "JwmdTk4dvOA",
+      "video_url": "https://www.youtube.com/watch?v=JwmdTk4dvOA",
+      "original_title": "Healthcare in North Las Vegas",
+      "topic": "healthcare",
+      "spoken_language": "en",
+      "display_title_en": "Healthcare in North Las Vegas",
+      "display_title_es": "Atención médica en North Las Vegas",
+      "description_en": "An update about a future acute-care hospital campus near 215 and Pecos, inviting residents' input.",
+      "description_es": "Una actualización sobre un futuro campus hospitalario cerca de la 215 y Pecos, con una invitación a opinar."
+    },
+    {
+      "sourceOrder": 6,
+      "video_id": "kZ1lMsGRw20",
+      "video_url": "https://www.youtube.com/watch?v=kZ1lMsGRw20",
+      "original_title": "Building a Stronger Community in North Las Vegas Ward 1 | Esmeralda Villeda for City Council",
+      "topic": "community",
+      "spoken_language": "en",
+      "display_title_en": "Building a Stronger Community",
+      "display_title_es": "Construyendo una comunidad más fuerte",
+      "description_en": "Planning commission work, responsible growth, resident advocacy and collaboration with first responders.",
+      "description_es": "Trabajo de planificación, crecimiento responsable, defensa de residentes y colaboración con personal de emergencia."
+    },
+    {
+      "sourceOrder": 7,
+      "video_id": "-gWWN_mmLjA",
+      "video_url": "https://www.youtube.com/watch?v=-gWWN_mmLjA",
+      "original_title": "Building Better Opportunities for North Las Vegas Families | Esmeralda Villeda Ward 1",
+      "topic": "community",
+      "spoken_language": "en",
+      "display_title_en": "Better Opportunities for Families",
+      "display_title_es": "Más oportunidades para las familias",
+      "description_en": "A video highlighting police and firefighter partnerships, neighborhood safety and family opportunity.",
+      "description_es": "Un video sobre alianzas con policías y bomberos, seguridad vecinal y oportunidades para las familias."
+    },
+    {
+      "sourceOrder": 8,
+      "video_id": "NlBk3KISxWU",
+      "video_url": "https://www.youtube.com/watch?v=NlBk3KISxWU",
+      "original_title": "Why I'm Running to Represent North Las Vegas Ward 1 | Esmeralda Villeda",
+      "topic": "story",
+      "spoken_language": "en",
+      "display_title_en": "Why I'm Running",
+      "display_title_es": "Por qué me postulo",
+      "description_en": "Esmeralda describes the opportunities her community gave her and why she wants to give back.",
+      "description_es": "Esmeralda cuenta las oportunidades que recibió de su comunidad y por qué quiere contribuir."
+    },
+    {
+      "sourceOrder": 9,
+      "video_id": "u9ARRoS_djw",
+      "video_url": "https://www.youtube.com/watch?v=u9ARRoS_djw",
+      "original_title": "Creating Opportunities for Our Families | Esmeralda Villeda for North Las Vegas Ward 1",
+      "topic": "community",
+      "spoken_language": "en",
+      "display_title_en": "Creating Opportunities for Our Families",
+      "display_title_es": "Creando oportunidades para nuestras familias",
+      "description_en": "A separate campaign Short on first-responder support, safer streets and stronger neighborhoods.",
+      "description_es": "Otro video de campaña sobre el apoyo a los equipos de emergencia, calles más seguras y vecindarios fuertes."
+    },
+    {
+      "sourceOrder": 10,
+      "video_id": "Q3Nc-MtM-Ko",
+      "video_url": "https://www.youtube.com/watch?v=Q3Nc-MtM-Ko",
+      "original_title": "Meet Esmeralda Villeda, Candidate for North Las Vegas City Council Ward 1",
+      "topic": "story",
+      "spoken_language": "en",
+      "display_title_en": "Meet Esmeralda Villeda",
+      "display_title_es": "Conoce a Esmeralda Villeda",
+      "description_en": "Her North Las Vegas upbringing, local schools, immigrant-family background and commitment to the city.",
+      "description_es": "Su infancia en North Las Vegas, las escuelas locales, sus raíces familiares inmigrantes y su compromiso con la ciudad."
+    }
+  ]
+}
