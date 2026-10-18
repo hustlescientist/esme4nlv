@@ -29,3 +29,15 @@ This repository contains two branches:
 Update `index.html` on `main` and copy the revised static site to the root of `gh-pages` to update the public demo. The `GHL-PASTE-IN.html` file is a separate fragment for the HighLevel editor and is not the GitHub Pages entrypoint.
 
 Original website: https://esmefornlv.com/
+
+## Endorsements inventory (October 18, 2026)
+
+The bilingual homepage and GHL custom-code fragment have the same expanded six-section endorsement wall: 5 leaders, 12 public-safety groups, 9 working-family and educator organizations, 5 veterans/community organizations, 3 businesses, and 3 local newspaper editorial boards (**37 named entries**).
+
+Source and asset mappings are maintained in [`endorsements-manifest.json`](endorsements-manifest.json). The source CSV contains 73 media records, including duplicates, photos, unrelated organizational marks, and documents; it is not 73 distinct endorsers.
+
+- NAPSO and Nevada Police Union appear as **text-only cards** because the CSV did not provide an unambiguous logo match.
+- The earlier master endorsement sheet references eight leadership rows, but available source names/graphics identify only five. Three unnamed rows were **not fabricated**; provide their exact names/artwork to complete that part of the list.
+- Unmatched Teamsters and unrelated regional-police logos were intentionally not published as endorsements.
+- Newspaper cards link to the published editorial guides; a “Gun Sense Candidate” designation is not shown as an organizational endorsement.
+- The site remains one GHL-ready static SPA; no GitHub Actions workflows were added.
