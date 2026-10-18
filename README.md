@@ -53,3 +53,14 @@ The original inline HighLevel form (`bNfm16tjccR3VPuBa7u4`) was collapsing on th
 If fields still fail to load after publishing, check the browser Network/Console for blocked `api.leadconnectorhq.com/widget/form` or `link.msgsndr.com/js/form_embed.js`, other copies of `form_embed.js`, and **Optimize JavaScript** (temporarily disable for verification if GHL delays hydration). Use the direct form link as a temporary fallback.
 
 QA: Source and JS syntax were checked across both branches; in a controlled local Chromium reproduction, a mock HighLevel helper that hid the iframe did not collapse the frame, and simulated helper unavailability still produced a visible, 1090px container. Because external domain access is restricted in this test environment, the actual HighLevel form response and CRM submissions could not be verified here.
+
+## Campaign videos (October 18, 2026)
+
+The page now contains a **ten-video YouTube Shorts gallery** after Updates and before Get Involved, which keeps all videos downstream of the endorsement wall. Each video has a source-based English and Spanish summary, an EN/ES-aware title and accessible play label, filter chips for Candidate Story / Housing / Community / Healthcare, and a direct YouTube link.
+
+The gallery displays lazy thumbnail images but does **not** create any YouTube player iframe until the visitor clicks Play. The player is loaded from `youtube-nocookie.com`; closing or filtering away from a video removes the player and stops playback. Filtering and language switching stay within the same SPA.
+
+The upload provided visible on-screen video overlays, **not reliable word-for-word audio transcripts**. The website therefore uses brief descriptions rather than mislabeling overlays as closed captions. The two closely related public-safety videos are kept separately because their video IDs differ. The ten IDs, titles and displayed summaries are stored in [`videos-manifest.json`](videos-manifest.json).
+
+For the live `esmefornlv.com` page, **republish** the entire [GHL paste-in file](GHL-PASTE-IN.html) in its existing sole Custom Code block. The GitHub Pages demo updates from `gh-pages` independently and does not synchronize edits into HighLevel.
+
