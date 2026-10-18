@@ -1,0 +1,308 @@
+{
+  "updated": "2026-10-18",
+  "source": "Campaign-supplied media-assets-with-endorsement-matches.csv and endorsement sheet names; links for editorial boards are publisher pages.",
+  "note": "Five elected leaders have confirmed identities; three additional leadership rows in the earlier 40-row sheet were not named in the available sources. NAPSO and Nevada Police Union display text cards pending a confidently matched logo. Unmatched Teamsters and unrelated regional police logos omitted.",
+  "groups": [
+    {
+      "section": "leadership",
+      "title_en": "Endorsed by the Leaders You Trust",
+      "title_es": "Respaldada por los líderes en quienes confías",
+      "entries": [
+        {
+          "name": "Mayor Pamela Goynes-Brown",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6a1972394fbcad202b5a7681.png",
+          "asset_index": 36,
+          "source_asset_name": "5.png",
+          "external_url": "https://esmefornlv.com/post/Mayor-Pamela-Goynes-Brown"
+        },
+        {
+          "name": "Councilman Isaac Barron",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6a197239337267cd86ece154.png",
+          "asset_index": 34,
+          "source_asset_name": "4.png",
+          "external_url": "https://esmefornlv.com/post/councilman-isaac-barron"
+        },
+        {
+          "name": "Councilwoman Ruth Garcia-Anderson",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6a1972395be84ad640310095.png",
+          "asset_index": 35,
+          "source_asset_name": "2.png",
+          "external_url": "https://esmefornlv.com/post/councilwoman-ruth-garcia-anderson"
+        },
+        {
+          "name": "Assemblymember Cinthia Zermeño Moore",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6a197239045e32379ffc68c0.png",
+          "asset_index": 37,
+          "source_asset_name": "3.png",
+          "external_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6a197239045e32379ffc68c0.png"
+        },
+        {
+          "name": "Councilman Scott Black",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6a19729e5be84ad6403107d5.png",
+          "asset_index": 42,
+          "source_asset_name": "Original Endorsment Announcement.png",
+          "external_url": "https://esmefornlv.com/post/councilman-scott-black"
+        }
+      ]
+    },
+    {
+      "section": "safety",
+      "title_en": "Endorsed by Those That Protect the Community",
+      "title_es": "Respaldada por quienes protegen a nuestra comunidad",
+      "entries": [
+        {
+          "name": "Las Vegas Police Managers & Supervisors Association",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad4ed733cacdd9117a9296c.jpg",
+          "asset_index": 67,
+          "source_asset_name": "Las Vegas Police Managers & Supervisors Association.jpg",
+          "external_url": null
+        },
+        {
+          "name": "Las Vegas Police Protective Association",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad4ed6fcd7225ed37cd3d93.png",
+          "asset_index": 56,
+          "source_asset_name": "las vegas police protective association.png",
+          "external_url": null
+        },
+        {
+          "name": "Las Vegas Peace Officers Association (LVPOA)",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad4ed74cd7225ed37cd3e8a.jpg",
+          "asset_index": 68,
+          "source_asset_name": "Las Vegas Peace Officers Association.jpg",
+          "external_url": null
+        },
+        {
+          "name": "Las Vegas Peace Officer Supervisors Association (LVPOSA)",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad4ed74436f78fefb7af833.jpg",
+          "asset_index": 69,
+          "source_asset_name": "Las Vegas Peace Officer Supervisor Association.jpg",
+          "external_url": null
+        },
+        {
+          "name": "Nevada Association of Public Safety Officers (NAPSO)",
+          "image_url": null,
+          "asset_index": null,
+          "source_asset_name": null,
+          "external_url": null
+        },
+        {
+          "name": "Nevada Police Union",
+          "image_url": null,
+          "asset_index": null,
+          "source_asset_name": null,
+          "external_url": null
+        },
+        {
+          "name": "North Las Vegas Firefighters — IAFF Local 1607",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6a196dbd045e32379ffc16cc.png",
+          "asset_index": 23,
+          "source_asset_name": "North Las Vegas IAFF loog.jpg",
+          "external_url": null
+        },
+        {
+          "name": "North Las Vegas Police Officers Association",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad4ed70989628c77a5f7246.jpg",
+          "asset_index": 61,
+          "source_asset_name": "North Las Vegas Police Officers Association.jpg",
+          "external_url": null
+        },
+        {
+          "name": "North Las Vegas Police Supervisors Association",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/69fe63486ca44fd334a93cc7.jpg",
+          "asset_index": 11,
+          "source_asset_name": "NLV PSA (1).jpg",
+          "external_url": null
+        },
+        {
+          "name": "Police Officers Association of Clark County School District",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad4ed70f9a985d42cf78e23.jpg",
+          "asset_index": 62,
+          "source_asset_name": "Police Officers Association of Clark County School District.jpg",
+          "external_url": null
+        },
+        {
+          "name": "Professional Fire Fighters of Nevada (PFFN)",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6a196be7337267cd86ec697c.jpeg",
+          "asset_index": 17,
+          "source_asset_name": "professional fire fighters of nevada",
+          "external_url": null
+        },
+        {
+          "name": "Public Safety Alliance of Nevada",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad4ed70989628c77a5f7262.png",
+          "asset_index": 63,
+          "source_asset_name": "Public Safety Alliance of Nevada.png",
+          "external_url": null
+        }
+      ]
+    },
+    {
+      "section": "families",
+      "title_en": "Endorsed by Working Families & Our Educators",
+      "title_es": "Respaldada por las familias trabajadoras y nuestros educadores",
+      "entries": [
+        {
+          "name": "Clark County Education Association (CCEA)",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad149dbfbcf4d38019987a0.png",
+          "asset_index": 46,
+          "source_asset_name": "CCEA.png",
+          "external_url": null
+        },
+        {
+          "name": "Culinary Workers Union",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad14a05c10790ebd6e9990e.png",
+          "asset_index": 54,
+          "source_asset_name": "Culinary Workers logo.png",
+          "external_url": null
+        },
+        {
+          "name": "Nevada State AFL-CIO",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad149dbf26156aced00e8d7.jpeg",
+          "asset_index": 48,
+          "source_asset_name": "Nevada AFL-CIO.jpeg",
+          "external_url": null
+        },
+        {
+          "name": "Operating Engineers Local 12",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad149dbc10790ebd6e993eb.png",
+          "asset_index": 50,
+          "source_asset_name": "Operating engineers local 12.png",
+          "external_url": null
+        },
+        {
+          "name": "Operative Plasterers and Cement Masons Local 797",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6a196dbd5be84ad64030aae4.png",
+          "asset_index": 25,
+          "source_asset_name": "operative plasters and cement masons",
+          "external_url": null
+        },
+        {
+          "name": "SMART Local 88",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad149dbf7b44c381cf0ee22.png",
+          "asset_index": 49,
+          "source_asset_name": "smart local 88.png",
+          "external_url": null
+        },
+        {
+          "name": "Southern Nevada Building Trades Unions",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/69fe632d6ca44fd334a938c9.webp",
+          "asset_index": 6,
+          "source_asset_name": "SNBTU Logo (1).webp",
+          "external_url": null
+        },
+        {
+          "name": "UA Local 525 — Plumbers, Pipefitters & Service Technicians",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/69fe6348e4086e455f822859.png",
+          "asset_index": 14,
+          "source_asset_name": "FINAL Union Logo - blue CS2-1.png",
+          "external_url": null
+        },
+        {
+          "name": "IBEW Local 357",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad149db0b02a495c6fb580b.png",
+          "asset_index": 47,
+          "source_asset_name": "IBEW 357.png",
+          "external_url": null
+        }
+      ]
+    },
+    {
+      "section": "community",
+      "title_en": "Endorsed by Our Veterans & Community",
+      "title_es": "Respaldada por nuestros veteranos y la comunidad",
+      "entries": [
+        {
+          "name": "Nevada Veterans United",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad149db283355138e7f9818.jpg",
+          "asset_index": 45,
+          "source_asset_name": "nv veterans united.jpg",
+          "external_url": null
+        },
+        {
+          "name": "Nevada Veterans Caucus",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad149dcf26156aced00e8f3.jpeg",
+          "asset_index": 51,
+          "source_asset_name": "NV Veterans Caucus.jpeg",
+          "external_url": null
+        },
+        {
+          "name": "Hispanics in Politics (HIP)",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6a196dbd337267cd86ec89f5.png",
+          "asset_index": 21,
+          "source_asset_name": "hispanics in politics",
+          "external_url": null
+        },
+        {
+          "name": "Battle Born Kids Matter",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6a196dc35be84ad64030ab69.png",
+          "asset_index": 28,
+          "source_asset_name": "battle born kids matter",
+          "external_url": null
+        },
+        {
+          "name": "Armed Forces Chamber",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/69fe63486982746982141252.png",
+          "asset_index": 8,
+          "source_asset_name": "Armed Forces Chamber logo.png",
+          "external_url": null
+        }
+      ]
+    },
+    {
+      "section": "business",
+      "title_en": "Endorsed by Business",
+      "title_es": "Respaldada por el sector empresarial",
+      "entries": [
+        {
+          "name": "BORPAC — Board of REALTORS PAC",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/69fe6348a3dd25aa2ab3631d.jpg",
+          "asset_index": 9,
+          "source_asset_name": "BORPAC Logo.jpg",
+          "external_url": null
+        },
+        {
+          "name": "Latin Chamber of Commerce",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad149dc0b02a495c6fb5827.png",
+          "asset_index": 53,
+          "source_asset_name": "latin chamber of commerce.png",
+          "external_url": null
+        },
+        {
+          "name": "Vegas Chamber",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6a196dc35be84ad64030ab67.png",
+          "asset_index": 27,
+          "source_asset_name": "vegas chamber",
+          "external_url": null
+        }
+      ]
+    },
+    {
+      "section": "newspapers",
+      "title_en": "Endorsed by Your Local Newspaper",
+      "title_es": "Respaldada por los periódicos locales",
+      "entries": [
+        {
+          "name": "Las Vegas Review-Journal",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad149dcc10790ebd6e99403.jpg",
+          "asset_index": 52,
+          "source_asset_name": "LVRJ logo .jpg",
+          "external_url": "https://www.reviewjournal.com/opinion/rj-endorses-2026/rj-endorses-our-choices-for-novembers-election-3897944/"
+        },
+        {
+          "name": "Las Vegas Weekly",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6a197053337267cd86ecbafe.png",
+          "asset_index": 33,
+          "source_asset_name": "las vegas weekly.png",
+          "external_url": "https://lasvegasweekly.com/news/2026/oct/15/endorsements-midterm-election-southern-nevada/"
+        },
+        {
+          "name": "Las Vegas Sun",
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6a196dbd045e32379ffc16ca.png",
+          "asset_index": 20,
+          "source_asset_name": "las vegas sun",
+          "external_url": "https://lasvegassun.com/news/2026/oct/14/municipal-races-the-suns-picks-in-las-vegas-hender/"
+        }
+      ]
+    }
+  ]
+}
