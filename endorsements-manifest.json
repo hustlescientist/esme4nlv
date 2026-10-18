@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-18",
   "source": "Campaign-supplied media-assets-with-endorsement-matches.csv and endorsement sheet names; links for editorial boards are publisher pages.",
-  "note": "Five elected leaders have confirmed identities; three additional leadership rows in the earlier 40-row sheet were not named in the available sources. NAPSO and Nevada Police Union display text cards pending a confidently matched logo. Unmatched Teamsters and unrelated regional police logos omitted.",
+  "note": "Five elected leaders have confirmed identities; three additional leadership rows in the earlier 40-row sheet were not named in the available sources. NAPSO and Nevada Police Union logos were supplied directly by the campaign on October 18, 2026. Unmatched Teamsters and unrelated regional police logos omitted.",
   "groups": [
     {
       "section": "leadership",
@@ -80,16 +80,16 @@
         },
         {
           "name": "Nevada Association of Public Safety Officers (NAPSO)",
-          "image_url": null,
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad4f15ecd7225ed37cda0e8.jpeg",
           "asset_index": null,
-          "source_asset_name": null,
+          "source_asset_name": "Campaign-provided logo URL",
           "external_url": null
         },
         {
           "name": "Nevada Police Union",
-          "image_url": null,
+          "image_url": "https://assets.cdn.filesafe.space/O3M5IyoER19jK9STDmGO/media/6ad4f15e436f78fefb7b56e8.webp",
           "asset_index": null,
-          "source_asset_name": null,
+          "source_asset_name": "Campaign-provided logo URL",
           "external_url": null
         },
         {
