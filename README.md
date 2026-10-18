@@ -36,7 +36,7 @@ The bilingual homepage and GHL custom-code fragment have the same expanded six-s
 
 Source and asset mappings are maintained in [`endorsements-manifest.json`](endorsements-manifest.json). The source CSV contains 73 media records, including duplicates, photos, unrelated organizational marks, and documents; it is not 73 distinct endorsers.
 
-- NAPSO and Nevada Police Union appear as **text-only cards** because the CSV did not provide an unambiguous logo match.
+- NAPSO and Nevada Police Union now display their campaign-provided logos in the public-safety section (added October 18, 2026).
 - The earlier master endorsement sheet references eight leadership rows, but available source names/graphics identify only five. Three unnamed rows were **not fabricated**; provide their exact names/artwork to complete that part of the list.
 - Unmatched Teamsters and unrelated regional-police logos were intentionally not published as endorsements.
 - Newspaper cards link to the published editorial guides; a “Gun Sense Candidate” designation is not shown as an organizational endorsement.
