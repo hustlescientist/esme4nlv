@@ -41,3 +41,15 @@ Source and asset mappings are maintained in [`endorsements-manifest.json`](endor
 - Unmatched Teamsters and unrelated regional-police logos were intentionally not published as endorsements.
 - Newspaper cards link to the published editorial guides; a “Gun Sense Candidate” designation is not shown as an organizational endorsement.
 - The site remains one GHL-ready static SPA; no GitHub Actions workflows were added.
+
+## Form embedding: October 18, 2026
+
+The original inline HighLevel form (`bNfm16tjccR3VPuBa7u4`) was collapsing on the GHL-hosted live page. The form loader has been hardened in both `main/index.html` and `GHL-PASTE-IN.html`, and the same standalone fix has been published on `gh-pages`.
+
+**Changes:** removed `loading="lazy"`, deferred the iframe's real `src` until after HighLevel's embed helper initializes, reserved at least 1090px, repaired vendor-enforced off-screen or hidden iframe styles, restored a missing iframe after GHL hydration, and placed a direct form link above the embed so visitors can still contact the campaign if an external blocker prevents loading.
+
+**The GHL live page does not automatically sync from GitHub.** To update `esmefornlv.com/home`, replace the previous full Custom Code element with the current entire contents of [`GHL-PASTE-IN.html`](GHL-PASTE-IN.html) and republish. Keep a single widget/form ID and do not add the original iframe code separately.
+
+If fields still fail to load after publishing, check the browser Network/Console for blocked `api.leadconnectorhq.com/widget/form` or `link.msgsndr.com/js/form_embed.js`, other copies of `form_embed.js`, and **Optimize JavaScript** (temporarily disable for verification if GHL delays hydration). Use the direct form link as a temporary fallback.
+
+QA: Source and JS syntax were checked across both branches; in a controlled local Chromium reproduction, a mock HighLevel helper that hid the iframe did not collapse the frame, and simulated helper unavailability still produced a visible, 1090px container. Because external domain access is restricted in this test environment, the actual HighLevel form response and CRM submissions could not be verified here.
