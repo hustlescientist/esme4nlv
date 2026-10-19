@@ -56,11 +56,11 @@ QA: Source and JS syntax were checked across both branches; in a controlled loca
 
 ## Campaign videos (October 18, 2026)
 
-The page now contains a **ten-video YouTube Shorts gallery** after Updates and before Get Involved, which keeps all videos downstream of the endorsement wall. Each video has a source-based English and Spanish summary, an EN/ES-aware title and accessible play label, filter chips for Candidate Story / Housing / Community / Healthcare, and a direct YouTube link.
+The page now contains a **12-video campaign gallery** after Updates and before Get Involved, which keeps all videos downstream of the endorsement wall. Each video has a source-based English and Spanish summary, an EN/ES-aware title and accessible play label, filter chips for Candidate Story / Housing / Community / Healthcare / Public Safety / Small Business, and a direct YouTube link.
 
 The gallery displays lazy thumbnail images but does **not** create any YouTube player iframe until the visitor clicks Play. The player is loaded from `youtube-nocookie.com`; closing or filtering away from a video removes the player and stops playback. Filtering and language switching stay within the same SPA.
 
-The upload provided visible on-screen video overlays, **not reliable word-for-word audio transcripts**. The website therefore uses brief descriptions rather than mislabeling overlays as closed captions. The two closely related public-safety videos are kept separately because their video IDs differ. The ten IDs, titles and displayed summaries are stored in [`videos-manifest.json`](videos-manifest.json).
+The upload provided visible on-screen video overlays, **not reliable word-for-word audio transcripts**. The website therefore uses brief descriptions rather than mislabeling overlays as closed captions. The two closely related public-safety videos are kept separately because their video IDs differ. All 12 IDs, titles and displayed summaries are stored in [`videos-manifest.json`](videos-manifest.json).
 
 For the live `esmefornlv.com` page, **republish** the entire [GHL paste-in file](GHL-PASTE-IN.html) in its existing sole Custom Code block. The GitHub Pages demo updates from `gh-pages` independently and does not synchronize edits into HighLevel.
 
@@ -74,8 +74,25 @@ The bilingual SPA now includes five anchored destinations while retaining the fu
 - **`#e-ward1-meetings`**: an October 2026 curated snapshot of four public-meeting opportunities and direct official calendar and boards/commissions links. Dated meeting cards hide automatically when their day has passed (Nevada local timezone).
 - **`#e-who-to-call`**: anchor directly to the resident help directory within the resource area.
 
-The menu includes **Ward 1** in place of an Updates shortcut to avoid overcrowding; Updates remains available in the footer. History appears after Priorities, while the resource, voting, and meeting content appears after campaign videos and before Get Involved. All 37 endorsement cards, 10 videos, contact form, and ES/EN toggle remain.
+The menu includes a **Ward 1 dropdown** with links for **Know Ward 1, Resources, Voting, and Meetings**. The Ward 1 history section now starts after Endorsements, Updates, and the 12-video gallery, immediately above the resource area. Updates remains available in the footer. All 37 endorsement cards, 12 videos, contact form, and ES/EN toggle remain.
 
 The linked government resources are distinct from campaign operations. Reference numbers, links, and meeting dates are captured in [`ward1-resource-sources.json`](ward1-resource-sources.json). Civic information should be reviewed if city websites change.
 
 To apply this update to `esmefornlv.com`, replace the **single** existing HighLevel Custom Code block with [`GHL-PASTE-IN.html`](GHL-PASTE-IN.html) and republish. The GitHub Pages branch is independent of the GHL live site; no custom GitHub Actions workflows are used.
+
+
+## Ward 1 navigation and animation polish (October 19, 2026)
+
+The site now adds the campaign-supplied [Public Safety](https://youtube.com/shorts/2A1CtISXCIA) and [Small Business](https://youtu.be/K1uMPTdPBMs) videos. Public Safety is a Short; Small Business uses a landscape card. Gallery filters and EN/ES summaries are updated for 12 items. The brief descriptions are topic-based, not verified transcripts.
+
+The top-level **Ward 1** navigation item opens a native HTML `<details>` menu with four anchors: overview, resources, voting, and meetings. This pattern works with mouse, touch, Space/Enter and keyboard focus. The SPA closes the dropdown after navigation, on outside click, or on Escape. The top-level **Videos** menu entry now precedes Ward 1, matching document order.
+
+Ward 1 history now comes **after campaign endorsements, updates, and videos**, directly above the resident resources. Responsive motion improvements include:
+- Subtle card elevation and shadow feedback for historical milestones, community places, emergency numbers, voting information, and public meeting cards.
+- Animated timeline accent and year color on hover.
+- Direction-arrow cues on resource links and official voting links.
+- Dropdown reveal, expanded-directory feedback, and restrained one-time scroll entrances with staggered timing.
+- Keyboard-visible focus states and `prefers-reduced-motion` support; content remains usable if JavaScript or animations are unavailable.
+
+Source-file checks validate section ordering, all 12 video IDs, seven filters, bilingual labels, existing 37 endorsements, and the unchanged HighLevel form. The **live GHL page still requires republishing** the single Custom Code block from [`GHL-PASTE-IN.html`](GHL-PASTE-IN.html). GitHub Pages and GHL are independent deployments.
+
