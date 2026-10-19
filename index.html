@@ -709,6 +709,58 @@
  #esme-campaign .e-cv-year{position:relative;padding:17px 17px}
  #esme-campaign .e-cv-year:before{content:"";position:absolute;left:-24px;top:22px;width:11px;height:11px;border-radius:50%;background:var(--e-red);border:2px solid #fff;box-shadow:0 0 0 2px var(--e-red)}
 }
+
+/* Civic UX polish: animated dropdown, timeline, landmarks, voter cards and resident quick links. */
+#esme-campaign :is(.e-cv-year,.e-cv-place,.e-cv-call,.e-cv-election-card,.e-cv-meeting){
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease,background-color .25s ease;
+}
+#esme-campaign :is(.e-cv-year,.e-cv-place,.e-cv-call,.e-cv-meeting):focus-within{
+  border-color:var(--e-blue);box-shadow:0 10px 30px rgba(16,51,78,.1);
+}
+#esme-campaign .e-cv-year{position:relative}
+#esme-campaign .e-cv-year:after{content:"";display:block;position:absolute;left:0;right:100%;bottom:0;height:3px;background:var(--e-red);transition:right .3s ease}
+#esme-campaign .e-cv-year time{display:inline-block;transform-origin:left center;transition:transform .26s ease,color .26s ease}
+#esme-campaign .e-cv-pill,#esme-campaign .e-cv-button{
+ transition:transform .2s ease,box-shadow .2s ease,background .2s ease,border-color .2s ease;
+}
+#esme-campaign .e-cv-link span[aria-hidden="true"],#esme-campaign .e-cv-arrow{display:inline-block;transition:transform .2s ease,color .2s ease}
+#esme-campaign .e-cv-phone{transition:color .15s ease,text-decoration-color .15s ease}
+#esme-campaign .e-cv-phone:focus-visible,#esme-campaign .e-cv-pill:focus-visible,#esme-campaign .e-cv-button:focus-visible,
+#esme-campaign .e-cv-link:focus-visible,#esme-campaign .e-ward-dropdown a:focus-visible{
+ outline:3px solid var(--e-blue);outline-offset:3px;
+}
+#esme-campaign .e-cv-directory-details{transition:border-color .2s ease,box-shadow .2s ease}
+#esme-campaign .e-cv-directory-details[open]{border-color:var(--e-blue);box-shadow:0 8px 25px rgba(13,51,90,.07)}
+#esme-campaign .e-cv-directory-details summary{transition:background .2s ease,color .2s ease}
+#esme-campaign .e-cv-directory-details summary:focus-visible{outline:3px solid var(--e-blue);outline-offset:2px}
+#esme-campaign .e-cv-directory-details summary>span:last-child{display:inline-block;font-size:20px;transform-origin:center;transition:transform .25s ease,color .25s ease}
+#esme-campaign .e-cv-directory-details[open] summary{color:var(--e-blue)}
+#esme-campaign .e-cv-directory-details[open] summary>span:last-child{transform:rotate(45deg);color:var(--e-red)}
+#esme-campaign .e-cv-dolores-mark strong{transition:transform .35s ease}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ #esme-campaign :is(.e-cv-year,.e-cv-place,.e-cv-call,.e-cv-election-card,.e-cv-meeting):hover{
+  transform:translateY(-5px);border-color:#c7a978;box-shadow:0 16px 30px rgba(26,53,80,.10);
+ }
+ #esme-campaign .e-cv-year:hover:after{right:0}
+ #esme-campaign .e-cv-year:hover time{transform:translateX(4px);color:var(--e-blue)}
+ #esme-campaign .e-cv-pill:hover,#esme-campaign .e-cv-button:hover{transform:translateY(-3px);box-shadow:0 8px 18px rgba(24,49,68,.10)}
+ #esme-campaign .e-cv-link:hover span[aria-hidden="true"],#esme-campaign .e-cv-election-card:hover .e-cv-arrow{transform:translate(3px,-3px)}
+ #esme-campaign .e-cv-phone:hover{color:var(--e-blue)}
+ #esme-campaign .e-cv-dolores:hover .e-cv-dolores-mark strong{transform:translateY(-6px)}
+ #esme-campaign .e-cv-directory-details summary:hover{background:#e8f0f7}
+}
+@keyframes eWardMenuAppear{from{opacity:0;transform:translateY(-7px)}to{opacity:1;transform:translateY(0)}}
+@keyframes eDirectoryAppear{from{opacity:.45;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:no-preference){
+ #esme-campaign .e-ward-menu[open] .e-ward-dropdown{animation:eWardMenuAppear .18s ease-out both}
+ #esme-campaign .e-cv-directory-details[open] .e-cv-phone-grid{animation:eDirectoryAppear .22s ease-out}
+ #esme-campaign.e-cv-motion-ready .e-cv-reveal{transition:opacity .48s ease-out,transform .48s cubic-bezier(.22,1,.36,1);transition-delay:var(--e-cv-stagger,0ms)}
+ #esme-campaign.e-cv-motion-ready .e-cv-reveal:not(.is-cv-visible){opacity:0;transform:translateY(16px)}
+ #esme-campaign.e-cv-motion-ready .e-cv-reveal.is-cv-visible{opacity:1;transform:translateY(0)}
+}
+@media(prefers-reduced-motion:reduce){
+ #esme-campaign.e-cv-motion-ready .e-cv-reveal{opacity:1!important;transform:none!important}
+}
 </style>
 <div data-design-version="4-bilingual-spa" data-language="en" id="esme-campaign" lang="en">
 <script type="application/json" data-esme-config>{"defaultLanguage":"en","languageStorageKey":"esme.language","donateUrl":"https://secure.actblue.com/donate/esmeralda-villeda-1","formScriptUrl":"https://link.msgsndr.com/js/form_embed.js"}</script>
@@ -1148,6 +1200,37 @@
       if(empty) empty.hidden=count>0;
     }
     updateCivicMeetings();
+
+    // Progressive enhancement only: cards remain fully visible without JavaScript.
+    // Once visible, reveal each card once. Skip all motion for reduced-motion users.
+    let civicRevealObserver;
+    const civicReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!civicReducedMotion && 'IntersectionObserver' in window) {
+      const civicRevealCards = Array.from(root.querySelectorAll(
+        '.e-cv-year, .e-cv-place, .e-cv-call, .e-cv-election-card, .e-cv-meeting, .e-cv-dolores'
+      ));
+      try {
+        civicRevealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-cv-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { rootMargin:'0px 0px -18px 0px', threshold:0.08 });
+        civicRevealCards.forEach((card,i) => {
+          card.classList.add('e-cv-reveal');
+          card.style.setProperty('--e-cv-stagger', String((i % 3)*60)+'ms');
+          civicRevealObserver.observe(card);
+        });
+        root.classList.add('e-cv-motion-ready');
+      } catch (_) {
+        root.classList.remove('e-cv-motion-ready');
+        civicRevealCards.forEach(card => card.classList.remove('e-cv-reveal'));
+        civicRevealObserver?.disconnect();
+      }
+    }
+
     const nav = root.querySelector('[data-nav]');
     const wardMenu = nav.querySelector('[data-ward-menu]');
     const menuToggle = root.querySelector('[data-menu-toggle]');
@@ -1565,7 +1648,7 @@
     }
     const initialTarget = getTarget(window.location.hash);
     if (initialTarget) requestAnimationFrame(() => scrollToSection(initialTarget, { focus: false, instant: true }));
-    instance = { root, header, destroy() { abort.abort(); resizeObserver?.disconnect(); formObserver?.disconnect(); if (formFallbackTimer) clearTimeout(formFallbackTimer); if (formVisibilityTimer) clearTimeout(formVisibilityTimer); if (raf) cancelAnimationFrame(raf); } };
+    instance = { root, header, destroy() { abort.abort(); civicRevealObserver?.disconnect(); resizeObserver?.disconnect(); formObserver?.disconnect(); if (formFallbackTimer) clearTimeout(formFallbackTimer); if (formVisibilityTimer) clearTimeout(formVisibilityTimer); if (raf) cancelAnimationFrame(raf); } };
   }
   window[REGISTRY] = { boot };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot, { once: true });
