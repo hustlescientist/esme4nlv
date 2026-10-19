@@ -6,8 +6,8 @@
   "collectedDate": "2026-10-18",
   "channel": "https://www.youtube.com/@EsmeforNLV",
   "captionCaveat": "The uploaded notes describe visible on-screen text overlays; these are not word-for-word audio captions.",
-  "videoCount": 10,
-  "notes": "Two public-safety videos share closely related on-screen material; both unique video IDs are retained.",
+  "videoCount": 12,
+  "notes": "Two public-safety videos share closely related on-screen material; both unique video IDs are retained. Added Public Safety and Small Business links supplied by the campaign on October 19, 2026; audio transcripts and spoken language were not provided.",
   "videos": [
     {
       "sourceOrder": 1,
@@ -128,6 +128,34 @@
       "display_title_es": "Conoce a Esmeralda Villeda",
       "description_en": "Her North Las Vegas upbringing, local schools, immigrant-family background and commitment to the city.",
       "description_es": "Su infancia en North Las Vegas, las escuelas locales, sus raíces familiares inmigrantes y su compromiso con la ciudad."
+    },
+    {
+      "sourceOrder": 11,
+      "video_id": "2A1CtISXCIA",
+      "video_url": "https://youtube.com/shorts/2A1CtISXCIA?feature=share",
+      "original_title": "Public Safety",
+      "topic": "safety",
+      "spoken_language": "unverified",
+      "format": "short",
+      "display_title_en": "Public Safety",
+      "display_title_es": "Seguridad pública",
+      "description_en": "A campaign video about public safety in North Las Vegas.",
+      "description_es": "Un video de campaña sobre la seguridad pública en North Las Vegas.",
+      "source_note": "Campaign supplied URL and topic. Do not present the brief topic description as a transcript."
+    },
+    {
+      "sourceOrder": 12,
+      "video_id": "K1uMPTdPBMs",
+      "video_url": "https://youtu.be/K1uMPTdPBMs?si=d2NLan82ZzJyE8Xt",
+      "original_title": "Small Business",
+      "topic": "business",
+      "spoken_language": "unverified",
+      "format": "landscape",
+      "display_title_en": "Small Business",
+      "display_title_es": "Pequeños negocios",
+      "description_en": "A campaign video about small business in North Las Vegas.",
+      "description_es": "Un video de campaña sobre los pequeños negocios en North Las Vegas.",
+      "source_note": "Campaign supplied URL and topic. Do not present the brief topic description as a transcript."
     }
   ]
 }
