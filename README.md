@@ -64,3 +64,18 @@ The upload provided visible on-screen video overlays, **not reliable word-for-wo
 
 For the live `esmefornlv.com` page, **republish** the entire [GHL paste-in file](GHL-PASTE-IN.html) in its existing sole Custom Code block. The GitHub Pages demo updates from `gh-pages` independently and does not synchronize edits into HighLevel.
 
+## Ward 1 civic-resource area (October 19, 2026)
+
+The bilingual SPA now includes five anchored destinations while retaining the full campaign pages:
+
+- **`#e-ward1`**: North Las Vegas history (1946, 1972, 2000, 2011, 2025, 2026), official Ward 1 map, and three places with tap-to-call and directions.
+- **`#e-ward1-resources`**: prominent Dolores Huerta Resource Center card and an English/Spanish resident service telephone guide (four quick lines plus eight detailed directory contacts).
+- **`#e-civic-vote`**: six official-resource links for government election information, registration, site details, mail ballots, official guides, and help. Information is maintained by Clark County and Nevada election authorities.
+- **`#e-ward1-meetings`**: an October 2026 curated snapshot of four public-meeting opportunities and direct official calendar and boards/commissions links. Dated meeting cards hide automatically when their day has passed (Nevada local timezone).
+- **`#e-who-to-call`**: anchor directly to the resident help directory within the resource area.
+
+The menu includes **Ward 1** in place of an Updates shortcut to avoid overcrowding; Updates remains available in the footer. History appears after Priorities, while the resource, voting, and meeting content appears after campaign videos and before Get Involved. All 37 endorsement cards, 10 videos, contact form, and ES/EN toggle remain.
+
+The linked government resources are distinct from campaign operations. Reference numbers, links, and meeting dates are captured in [`ward1-resource-sources.json`](ward1-resource-sources.json). Civic information should be reviewed if city websites change.
+
+To apply this update to `esmefornlv.com`, replace the **single** existing HighLevel Custom Code block with [`GHL-PASTE-IN.html`](GHL-PASTE-IN.html) and republish. The GitHub Pages branch is independent of the GHL live site; no custom GitHub Actions workflows are used.
