@@ -1,0 +1,109 @@
+{
+  "checked_at": "2026-10-19",
+  "summary": "Bilingual resource links, phone directory, North Las Vegas historical timeline and static upcoming meeting snapshots. The official public websites remain definitive.",
+  "update_policy": "Check official source links periodically. Meeting cards hide after the meeting's local calendar day but no events are scraped or auto-added. Election links lead to government pages rather than replicating procedures.",
+  "landmarks": [
+    {
+      "name": "Neighborhood Recreation Center and Hartke Park",
+      "year": 1972,
+      "address": "1638 N. Bruce St., North Las Vegas, NV 89030",
+      "phone": "702-633-1600",
+      "source": "https://www.cityofnorthlasvegas.com/home/showdocument?id=9767"
+    },
+    {
+      "name": "North Las Vegas City Hall",
+      "year": 2011,
+      "address": "2250 Las Vegas Blvd. North, North Las Vegas, NV 89030",
+      "phone": "702-633-1000",
+      "source": "https://www.cityofnorthlasvegas.com/"
+    },
+    {
+      "name": "Dolores Huerta Resource Center",
+      "year": 2025,
+      "address": "1737 Hunkins Dr., North Las Vegas, NV 89030",
+      "phone": "702-669-3472",
+      "source": "https://www.cityofnorthlasvegas.com/residents/dolores-huerta-resource-center?locale=en"
+    }
+  ],
+  "usefulNumbers": [
+    [
+      "Emergency",
+      "911",
+      "https://nevada988.org/"
+    ],
+    [
+      "Nevada 988",
+      "988",
+      "https://nevada988.org/"
+    ],
+    [
+      "Nevada 211",
+      "211",
+      "https://www.nevada211.org/"
+    ],
+    [
+      "North Las Vegas City",
+      "702-633-1000",
+      "https://www.cityofnorthlasvegas.com/"
+    ],
+    [
+      "NLV Police Main",
+      "702-633-9111",
+      "https://www.cityofnorthlasvegas.com/residents/police?locale=en"
+    ],
+    [
+      "Code Enforcement",
+      "702-633-1677",
+      "https://www.cityofnorthlasvegas.com/residents/code-enforcement"
+    ],
+    [
+      "Water & Sewer Customer Service",
+      "702-633-1484",
+      "https://www.cityofnorthlasvegas.com/residents/water"
+    ],
+    [
+      "Water Utility After Hours",
+      "702-633-1275",
+      "https://www.cityofnorthlasvegas.com/residents/water"
+    ],
+    [
+      "Clark County Social Service",
+      "702-455-4270",
+      "https://www.clarkcountynv.gov/residents/assistance_programs/"
+    ],
+    [
+      "Parks and Recreation",
+      "702-633-1171",
+      "https://www.cityofnorthlasvegas.com/things-to-do/parks-and-recreation?locale=en"
+    ]
+  ],
+  "votingInformationSources": [
+    "https://www.clarkcountynv.gov/government/departments/elections/",
+    "https://www.clarkcountynv.gov/government/departments/elections/26g-info",
+    "https://nvsos.gov/sos/elections/election-information/2026-election-information"
+  ],
+  "meetingSource": "https://www.cityofnorthlasvegas.com/our-city/advanced-components/list-detail-pages/calendar-meeting-list",
+  "meetingsAsReviewed": [
+    {
+      "date": "2026-10-21",
+      "time": "4:00 PM",
+      "title": "City Council Regular Meeting"
+    },
+    {
+      "date": "2026-11-02",
+      "time": "5:00 PM",
+      "title": "Education Advisory Committee"
+    },
+    {
+      "date": "2026-11-04",
+      "time": "4:00 PM",
+      "title": "City Council and Redevelopment Agency"
+    },
+    {
+      "date": "2026-11-11",
+      "time": "5:30 PM",
+      "title": "Planning Commission"
+    }
+  ],
+  "disclaimer": "Not an official City or election department site. Source links and provider service details should be checked directly; no voting procedures or election dates are locally copied."
+}
