@@ -701,7 +701,14 @@
 #esme-campaign .e-cv-no-meetings{padding:17px;background:#eff6fb;border:1px solid #dfe7ed;font-size:12px}
 @media(max-width:1050px){#esme-campaign .e-cv-years{grid-template-columns:repeat(3,minmax(0,1fr))}#esme-campaign .e-cv-quickcalls{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){#esme-campaign .e-cv-header{grid-template-columns:1fr;gap:12px}#esme-campaign .e-cv-places-grid{grid-template-columns:1fr 1fr}#esme-campaign .e-cv-dolores{grid-template-columns:1fr}#esme-campaign .e-cv-dolores-mark{display:none}#esme-campaign .e-cv-election-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#esme-campaign .e-cv-meeting-grid{grid-template-columns:1fr}}
-@media(max-width:525px){#esme-campaign .e-cv-display{font-size:34px}#esme-campaign .e-cv-years{grid-template-columns:1fr 1fr}#esme-campaign .e-cv-place,#esme-campaign .e-cv-call,#esme-campaign .e-cv-election-card{padding:15px}#esme-campaign .e-cv-places-grid,#esme-campaign .e-cv-election-grid,#esme-campaign .e-cv-phone-grid{grid-template-columns:1fr}#esme-campaign .e-cv-dolores>div:first-child{padding:25px 20px}#esme-campaign .e-cv-year time{font-size:31px}#esme-campaign .e-cv-quicknav{gap:5px}#esme-campaign .e-cv-pill{font-size:9px;padding:9px 10px}#esme-campaign .e-cv-years{gap:8px}#esme-campaign .e-cv-quickcalls{gap:8px}}
+@media(max-width:525px){#esme-campaign .e-cv-display{font-size:34px}#esme-campaign .e-cv-years{grid-template-columns:1fr;border-left:3px solid var(--e-gold);padding-left:17px}#esme-campaign .e-cv-place,#esme-campaign .e-cv-call,#esme-campaign .e-cv-election-card{padding:15px}#esme-campaign .e-cv-places-grid,#esme-campaign .e-cv-election-grid,#esme-campaign .e-cv-phone-grid{grid-template-columns:1fr}#esme-campaign .e-cv-dolores>div:first-child{padding:25px 20px}#esme-campaign .e-cv-year time{font-size:31px}#esme-campaign .e-cv-quicknav{gap:5px}#esme-campaign .e-cv-pill{font-size:9px;padding:9px 10px}#esme-campaign .e-cv-years{gap:8px}#esme-campaign .e-cv-quickcalls{gap:8px}}
+
+/* Compact timeline becomes a vertical sequence on phones. */
+#esme-campaign :is(.e-cv-year h4,.e-cv-place h4,.e-cv-call h4){margin:0}
+@media(max-width:525px){
+ #esme-campaign .e-cv-year{position:relative;padding:17px 17px}
+ #esme-campaign .e-cv-year:before{content:"";position:absolute;left:-24px;top:22px;width:11px;height:11px;border-radius:50%;background:var(--e-red);border:2px solid #fff;box-shadow:0 0 0 2px var(--e-red)}
+}
 </style>
 <div data-design-version="4-bilingual-spa" data-language="en" id="esme-campaign" lang="en">
 <script type="application/json" data-esme-config>{"defaultLanguage":"en","languageStorageKey":"esme.language","donateUrl":"https://secure.actblue.com/donate/esmeralda-villeda-1","formScriptUrl":"https://link.msgsndr.com/js/form_embed.js"}</script>
