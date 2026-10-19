@@ -96,3 +96,12 @@ Ward 1 history now comes **after campaign endorsements, updates, and videos**, d
 
 Source-file checks validate section ordering, all 12 video IDs, seven filters, bilingual labels, existing 37 endorsements, and the unchanged HighLevel form. The **live GHL page still requires republishing** the single Custom Code block from [`GHL-PASTE-IN.html`](GHL-PASTE-IN.html). GitHub Pages and GHL are independent deployments.
 
+## Ward 1 navigation and new videos (October 19, 2026)
+
+The Ward 1 history section now begins **after the campaign videos and before resident resources**. The new video entries are **Public Safety** (`2A1CtISXCIA`) and **Small Business** (`K1uMPTdPBMs`), for twelve videos total, with both English and Spanish labels and filters.
+
+The Ward 1 navigation uses a native, accessible `<details><summary>` control styled to **exactly match the baseline and type scale of the other menu links**. The default disclosure triangle is suppressed, the SVG chevron is constrained to 12px, and the dropdown is absolutely positioned beneath the header on desktop. Pointer hover opens and closes it for fine-pointer desktops; native click, Enter/Space, and Escape work for keyboard or touch. On mobile the same submenu expands in the flow of the hamburger menu.
+
+Items: Know Ward 1, Resources, Voting, Meetings. EN/ES switching, 37 endorsements, one HighLevel contact form, and the campaign phone number are preserved.
+
+To publish the change on the live `esmefornlv.com` site, replace the sole existing custom-code block with [`GHL-PASTE-IN.html`](GHL-PASTE-IN.html), save, and republish. The GitHub Pages demonstration is separately deployed from `gh-pages`; no custom GitHub Actions workflows were introduced.
