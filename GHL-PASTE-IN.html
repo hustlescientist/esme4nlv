@@ -738,6 +738,202 @@
 @media(prefers-reduced-motion:reduce){
  #esme-campaign.e-cv-motion-ready .e-cv-reveal{opacity:1!important;transform:none!important}
 }
+
+/* Ward 1 dropdown: inherits the main navigation's typography and baseline. */
+#esme-campaign .e-nav-list > .e-nav-ward-item {
+  display:flex;
+  position:relative;
+  align-items:center;
+  min-width:0;
+  flex:none;
+}
+#esme-campaign .e-nav-list .e-ward-menu {
+  display:block;
+  position:relative;
+  margin:0;
+  padding:0;
+  width:auto;
+  max-width:100%;
+  line-height:inherit;
+}
+#esme-campaign .e-nav-list .e-ward-summary {
+  display:inline-flex !important;
+  align-items:center;
+  justify-content:flex-start;
+  gap:6px;
+  min-height:48px;
+  margin:0;
+  padding:4px 0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  color:var(--e-ink);
+  font:700 11px/1.5 var(--e-body);
+  text-align:left;
+  white-space:nowrap;
+  cursor:pointer;
+  list-style:none !important;
+  list-style-type:none !important;
+  appearance:none;
+  -webkit-appearance:none;
+  position:relative;
+}
+#esme-campaign .e-nav-list .e-ward-summary::-webkit-details-marker {
+  display:none !important;
+}
+#esme-campaign .e-nav-list .e-ward-summary::marker {
+  content:"";
+  font-size:0;
+}
+#esme-campaign .e-nav-list .e-ward-summary svg {
+  display:block;
+  flex:none;
+  width:12px !important;
+  height:12px !important;
+  max-width:12px !important;
+  max-height:12px !important;
+  color:var(--e-red);
+  stroke:currentColor;
+  transition:transform .18s ease;
+}
+#esme-campaign .e-nav-list .e-ward-menu[open] .e-ward-summary svg {
+  transform:rotate(180deg);
+}
+#esme-campaign .e-nav-list .e-ward-summary:hover,
+#esme-campaign .e-nav-list .e-ward-summary.is-current,
+#esme-campaign .e-nav-list .e-ward-menu[open] > .e-ward-summary {
+  color:var(--e-red);
+}
+#esme-campaign .e-nav-list .e-ward-summary::after {
+  content:"";
+  position:absolute;
+  bottom:5px;
+  left:0;
+  right:0;
+  height:2px;
+  background:var(--e-red);
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform .18s ease;
+}
+#esme-campaign .e-nav-list .e-ward-summary:hover::after,
+#esme-campaign .e-nav-list .e-ward-summary.is-current::after,
+#esme-campaign .e-nav-list .e-ward-menu[open] > .e-ward-summary::after {
+  transform:scaleX(1);
+}
+#esme-campaign .e-nav-list .e-ward-summary:focus-visible {
+  outline:3px solid var(--e-blue);
+  outline-offset:3px;
+}
+#esme-campaign .e-nav-list .e-ward-menu:not([open]) > .e-ward-dropdown {
+  display:none;
+}
+#esme-campaign .e-nav-list .e-ward-menu[open] > .e-ward-dropdown {
+  display:flex;
+  position:absolute;
+  z-index:75;
+  left:-15px;
+  top:calc(100% - 1px);
+  width:225px;
+  min-width:0;
+  padding:6px;
+  flex-direction:column;
+  gap:0;
+  background:#fff;
+  border:1px solid #e5e5e9;
+  border-top:3px solid var(--e-red);
+  border-radius:0 0 5px 5px;
+  box-shadow:0 16px 30px rgba(29,30,42,.16);
+}
+#esme-campaign .e-nav-list .e-ward-dropdown a {
+  display:flex;
+  align-items:center;
+  position:relative;
+  width:100%;
+  min-height:42px;
+  padding:12px 13px;
+  border:0;
+  border-radius:3px;
+  color:var(--e-ink);
+  background:transparent;
+  font:700 12px/1.4 var(--e-body);
+  text-decoration:none;
+  text-align:left;
+  white-space:normal;
+}
+#esme-campaign .e-nav-list .e-ward-dropdown a::after {
+  display:none !important;
+}
+#esme-campaign .e-nav-list .e-ward-dropdown a:hover,
+#esme-campaign .e-nav-list .e-ward-dropdown a:focus-visible,
+#esme-campaign .e-nav-list .e-ward-dropdown a[aria-current] {
+  color:var(--e-red);
+  background:#f8f3f1;
+}
+#esme-campaign .e-nav-list .e-ward-dropdown a:focus-visible {
+  outline:2px solid var(--e-blue);
+  outline-offset:-2px;
+}
+@media (min-width:1101px) and (max-width:1240px) {
+  #esme-campaign .e-nav-list .e-ward-summary {
+    font-size:10px;
+  }
+}
+@media (max-width:1100px) {
+  #esme-campaign .e-nav-list > .e-nav-ward-item {
+    display:block;
+    width:100%;
+    flex:none;
+  }
+  #esme-campaign .e-nav-list .e-ward-menu {
+    width:100%;
+  }
+  #esme-campaign .e-nav-list .e-ward-summary {
+    display:flex !important;
+    width:100%;
+    min-height:60px;
+    padding:15px 2px;
+    border-bottom:1px solid #eee8e1;
+    font-size:17px;
+    gap:20px;
+  }
+  #esme-campaign .e-nav-list .e-ward-summary svg {
+    margin-left:auto;
+    width:15px !important;
+    height:15px !important;
+    max-width:15px !important;
+    max-height:15px !important;
+  }
+  #esme-campaign .e-nav-list .e-ward-summary::after {
+    display:none;
+  }
+  #esme-campaign .e-nav-list .e-ward-menu[open] > .e-ward-dropdown {
+    position:static;
+    top:auto;
+    left:auto;
+    z-index:auto;
+    width:100%;
+    padding:5px 0 7px 28px;
+    background:#fff;
+    border:0;
+    border-left:3px solid var(--e-red);
+    border-radius:0;
+    box-shadow:none;
+  }
+  #esme-campaign .e-nav-list .e-ward-dropdown a {
+    width:100%;
+    min-height:46px;
+    padding:11px 10px;
+    border-bottom:1px solid #f0e9e5;
+    font-size:14px;
+  }
+}
+@media (prefers-reduced-motion:reduce) {
+  #esme-campaign .e-nav-list .e-ward-summary svg,
+  #esme-campaign .e-nav-list .e-ward-summary::after {
+    transition:none;
+  }
+}
 </style>
 <div data-design-version="4-bilingual-spa" data-language="en" id="esme-campaign" lang="en">
 <script type="application/json" data-esme-config>{"defaultLanguage":"en","languageStorageKey":"esme.language","donateUrl":"https://secure.actblue.com/donate/esmeralda-villeda-1","formScriptUrl":"https://link.msgsndr.com/js/form_embed.js"}</script>
@@ -752,7 +948,7 @@
 <span aria-hidden="true" class="e-brand-bars"><i></i><i></i><i></i></span>
 <span class="e-brand-office" data-i18n="nav.office">NORTH LAS VEGAS / WARD 1</span></a>
 <nav aria-label="Main navigation" class="e-nav" data-i18n-aria-label="nav.label" data-nav="" id="e-navigation">
-<ul class="e-nav-list"><li><a href="#e-meet"><span aria-hidden="true" class="e-nav-index">01</span><span data-i18n="nav.meet">Meet Esme</span><span aria-hidden="true" class="e-nav-arrow">→</span></a></li><li><a href="#e-priorities"><span aria-hidden="true" class="e-nav-index">02</span><span data-i18n="nav.priorities">Priorities</span><span aria-hidden="true" class="e-nav-arrow">→</span></a></li><li><a href="#e-endorsements"><span aria-hidden="true" class="e-nav-index">03</span><span data-i18n="nav.endorsements">Endorsements</span><span aria-hidden="true" class="e-nav-arrow">→</span></a></li><li><a href="#e-videos"><span aria-hidden="true" class="e-nav-index">04</span><span data-i18n="nav.videos">Videos</span><span aria-hidden="true" class="e-nav-arrow">→</span></a></li><li class="e-nav-ward-item"><details class="e-ward-menu" data-ward-menu><summary class="e-ward-summary" data-ward-summary><span aria-hidden="true" class="e-nav-index">05</span><span data-i18n="nav.ward1">Ward 1</span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><div class="e-ward-dropdown" role="group" aria-label="Ward 1 links" data-i18n-aria-label="nav.ward.linksLabel"><a href="#e-ward1" data-i18n="nav.ward.overview">Know Ward 1</a><a href="#e-ward1-resources" data-i18n="nav.ward.resources">Resources</a><a href="#e-civic-vote" data-i18n="nav.ward.voting">Voting</a><a href="#e-ward1-meetings" data-i18n="nav.ward.meetings">Meetings</a></div></details></li><li><a href="#e-join"><span aria-hidden="true" class="e-nav-index">06</span><span data-i18n="nav.join">Get involved</span><span aria-hidden="true" class="e-nav-arrow">→</span></a></li><li><a href="#e-signup-form"><span aria-hidden="true" class="e-nav-index">07</span><span data-i18n="nav.contact">Contact</span><span aria-hidden="true" class="e-nav-arrow">→</span></a></li></ul>
+<ul class="e-nav-list"><li><a href="#e-meet"><span aria-hidden="true" class="e-nav-index">01</span><span data-i18n="nav.meet">Meet Esme</span><span aria-hidden="true" class="e-nav-arrow">→</span></a></li><li><a href="#e-priorities"><span aria-hidden="true" class="e-nav-index">02</span><span data-i18n="nav.priorities">Priorities</span><span aria-hidden="true" class="e-nav-arrow">→</span></a></li><li><a href="#e-endorsements"><span aria-hidden="true" class="e-nav-index">03</span><span data-i18n="nav.endorsements">Endorsements</span><span aria-hidden="true" class="e-nav-arrow">→</span></a></li><li><a href="#e-videos"><span aria-hidden="true" class="e-nav-index">04</span><span data-i18n="nav.videos">Videos</span><span aria-hidden="true" class="e-nav-arrow">→</span></a></li><li class="e-nav-ward-item"><details class="e-ward-menu" data-ward-menu><summary class="e-ward-summary" data-ward-summary aria-controls="e-ward-dropdown-links"><span aria-hidden="true" class="e-nav-index">05</span><span data-i18n="nav.ward1">Ward 1</span><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><div class="e-ward-dropdown" id="e-ward-dropdown-links" role="group" aria-label="Ward 1 links" data-i18n-aria-label="nav.ward.linksLabel"><a href="#e-ward1" data-i18n="nav.ward.overview">Know Ward 1</a><a href="#e-ward1-resources" data-i18n="nav.ward.resources">Resources</a><a href="#e-civic-vote" data-i18n="nav.ward.voting">Voting</a><a href="#e-ward1-meetings" data-i18n="nav.ward.meetings">Meetings</a></div></details></li><li><a href="#e-join"><span aria-hidden="true" class="e-nav-index">06</span><span data-i18n="nav.join">Get involved</span><span aria-hidden="true" class="e-nav-arrow">→</span></a></li><li><a href="#e-signup-form"><span aria-hidden="true" class="e-nav-index">07</span><span data-i18n="nav.contact">Contact</span><span aria-hidden="true" class="e-nav-arrow">→</span></a></li></ul>
 <div class="e-nav-mobile-footer"><p data-i18n="nav.menuFooter">Your neighbor. Your voice.</p><a class="e-button e-button-blue" data-donate="" href="https://secure.actblue.com/donate/esmeralda-villeda-1" rel="noopener noreferrer" target="_blank"><span data-i18n="nav.donate">Donate</span><svg aria-hidden="true" class="e-arrow" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a></div>
 </nav>
 <div class="e-header-controls">
@@ -1499,6 +1695,20 @@
       updateURL('push', '#' + destination.id);
       scrollToSection(destination);
     });
+    // A compact, accessible Ward 1 submenu: hover on mouse desktops,
+    // native summary keyboard/click toggling everywhere, and inline on mobile.
+    const wardHover = window.matchMedia('(hover: hover) and (pointer: fine)');
+    if (wardMenu) {
+      listen(wardMenu, 'pointerenter', () => {
+        if (!narrow.matches && wardHover.matches) wardMenu.open = true;
+      });
+      listen(wardMenu, 'pointerleave', () => {
+        if (narrow.matches || !wardHover.matches) return;
+        const links = wardMenu.querySelector('.e-ward-dropdown');
+        if (links && links.contains(document.activeElement)) return;
+        wardMenu.open = false;
+      });
+    }
     listen(menuToggle, 'click', () => {
       const open = menuToggle.getAttribute('aria-expanded') !== 'true';
       setMenu(open);
