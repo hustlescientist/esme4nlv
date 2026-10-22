@@ -371,14 +371,14 @@
 #esme-campaign .e-join-portrait {position:sticky;top:var(--e-scroll-offset);align-self:start}
 #esme-campaign.e-at-join .e-mobile-dock {display:none}
 #esme-campaign .e-noscript {padding:16px;text-align:center;background:var(--e-tan);font-size:13px}
-@media(min-width:1101px) and (max-width:1240px) {
+@media(min-width:1281px) and (max-width:1400px) {
  #esme-campaign .e-header-inner {gap:18px}
  #esme-campaign .e-header-controls {gap:10px}
  #esme-campaign .e-nav-list {gap:16px}
  #esme-campaign .e-brand {width:192px}
  #esme-campaign .e-nav-list a {font-size:10px}
 }
-@media(max-width:1100px) {
+@media(max-width:1280px) {
  #esme-campaign .e-header-inner {min-height:76px;gap:16px;justify-content:space-between;position:static;flex-wrap:nowrap}
  #esme-campaign .e-header-controls {gap:12px}
  #esme-campaign .e-header-donate {display:none}
@@ -592,7 +592,7 @@
 #esme-campaign .e-video-bottom{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-top:27px;font-size:12px;line-height:1.6;color:#526377}
 #esme-campaign .e-video-channel{display:inline-flex;min-height:44px;align-items:center;font-weight:800;color:var(--e-red);text-decoration:underline;text-underline-offset:4px}
 @media(max-width:1239px){#esme-campaign .e-videos-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
-@media(min-width:1101px) and (max-width:1260px){#esme-campaign .e-nav-list{gap:11px}#esme-campaign .e-nav-list a{font-size:10px}}
+@media(min-width:1281px) and (max-width:1400px){#esme-campaign .e-nav-list{gap:11px}#esme-campaign .e-nav-list a{font-size:10px}}
 @media(max-width:970px){#esme-campaign .e-videos-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:740px){#esme-campaign .e-videos{padding-block:65px 70px}#esme-campaign .e-videos-head{grid-template-columns:1fr;gap:9px}#esme-campaign .e-videos-intro{justify-self:start;max-width:630px}#esme-campaign .e-videos-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}#esme-campaign .e-video-card-body{padding:12px 12px 16px}#esme-campaign .e-video-title{font-size:17px}}
 @media(max-width:480px){#esme-campaign .e-videos-grid{grid-template-columns:1fr;gap:12px}#esme-campaign .e-video-card{display:grid;grid-template-columns:minmax(118px,38%) minmax(0,1fr);align-items:stretch}#esme-campaign .e-video-media{height:100%;min-height:200px;aspect-ratio:9/14}#esme-campaign .e-video-title{font-size:17px}#esme-campaign .e-video-desc{font-size:11.5px}#esme-campaign .e-video-play-circle{width:48px;height:48px}#esme-campaign .e-video-play-circle svg{width:22px;height:22px}#esme-campaign .e-video-play-word{font-size:9px}#esme-campaign .e-video-card-body{gap:8px;padding:12px 10px}#esme-campaign .e-video-toolbar{gap:9px}}
@@ -754,7 +754,7 @@
 #esme-campaign .e-social-icon,#esme-campaign .e-footer-social-link svg{display:inline-flex;align-items:center;justify-content:center;width:19px;height:19px;flex:none}
 #esme-campaign .e-social-external{font-size:15px;line-height:1;margin-left:3px;color:var(--e-red)}
 #esme-campaign .e-nav-social{display:none}
-@media(max-width:1100px){
+@media(max-width:1280px){
  #esme-campaign .e-nav-social{display:flex;gap:10px;align-items:center;justify-content:flex-start;padding:18px 0 4px}
  #esme-campaign .e-nav-social a{display:flex;align-items:center;justify-content:center;width:46px;height:46px;min-width:46px;min-height:46px;border:1px solid #e3d9d0;background:#faf8f6;color:#263646;transition:color .18s,border-color .18s,background .18s}
  #esme-campaign .e-nav-social a:hover{color:var(--e-red);border-color:var(--e-red);background:#fff}
@@ -773,6 +773,38 @@
 @media(prefers-reduced-motion:reduce){
  #esme-campaign .e-footer-social-link,#esme-campaign .e-nav-social a{transition:none}
  #esme-campaign .e-footer-social-link:hover{transform:none}
+}
+
+
+/* Social channels beside the top-level navigation. All icons use bundled SVG artwork. */
+#esme-campaign .e-header-social{display:flex;align-items:center;justify-content:center;gap:4px;flex:0 0 auto;margin-right:2px;padding-right:10px;border-right:1px solid #e8e1dc}
+#esme-campaign .e-header-social a{display:grid;place-items:center;width:36px;min-width:36px;height:40px;min-height:40px;padding:0;border:1px solid transparent;border-radius:2px;background:transparent;color:#293b4c;transition:color .18s,background .18s,border-color .18s}
+#esme-campaign .e-header-social a:hover{color:var(--e-red);background:#f9f0f1;border-color:#f0dade}
+#esme-campaign .e-header-social a:focus-visible{outline:3px solid var(--e-blue);outline-offset:2px}
+#esme-campaign .e-header-social svg{display:block;width:19px;height:19px;flex:none}
+@media(min-width:1281px) and (max-width:1400px){
+ #esme-campaign .e-header-inner{gap:16px}
+ #esme-campaign .e-brand{width:190px}
+ #esme-campaign .e-nav-list{gap:12px}
+ #esme-campaign .e-header-controls{gap:9px}
+ #esme-campaign .e-header-social{gap:2px;padding-right:7px;margin-right:0}
+ #esme-campaign .e-header-social a{width:34px;min-width:34px}
+ #esme-campaign .e-header-donate{padding-inline:13px}
+}
+@media(max-width:1280px){
+ #esme-campaign .e-header-social{gap:3px;padding:0;margin:0;border:0}
+ #esme-campaign .e-header-social a{width:42px;min-width:42px;height:44px;min-height:44px}
+}
+@media(min-width:741px) and (max-width:1280px){
+ /* Links are in the header at these widths, avoiding redundant menu links. */
+ #esme-campaign .e-nav-social{display:none!important}
+}
+@media(max-width:740px){
+ /* Preserve the existing uncluttered mobile bar; icons live in the open menu. */
+ #esme-campaign .e-header-social{display:none!important}
+}
+@media(prefers-reduced-motion:reduce){
+ #esme-campaign .e-header-social a{transition:none}
 }
 
 /* Detailed official-source cards with plain-language previews of each linked page. */
@@ -803,8 +835,8 @@
 #esme-campaign .e-nav-list .e-ward-dropdown a::after{display:none!important}
 #esme-campaign .e-nav-list .e-ward-dropdown a:is(:hover,:focus-visible,[aria-current]){color:var(--e-red);background:#f9f1f0}
 #esme-campaign .e-nav-list .e-ward-dropdown a:focus-visible{outline:2px solid var(--e-blue);outline-offset:-2px}
-@media(min-width:1101px) and (max-width:1240px){#esme-campaign .e-nav-list .e-ward-link{font-size:10px}}
-@media(max-width:1100px){
+@media(min-width:1281px) and (max-width:1400px){#esme-campaign .e-nav-list .e-ward-link{font-size:10px}}
+@media(max-width:1280px){
 #esme-campaign .e-nav-list>.e-nav-ward-item{width:100%}
 #esme-campaign .e-nav-list .e-ward-trigger{width:100%;min-height:60px;border-bottom:1px solid #eee8e1}
 #esme-campaign .e-nav-list .e-ward-link{flex:1;min-height:60px;padding:15px 2px;border:0}
@@ -839,6 +871,7 @@
 <div class="e-nav-mobile-footer"><p data-i18n="nav.menuFooter">Your neighbor. Your voice.</p><a class="e-button e-button-blue" data-donate="" href="https://secure.actblue.com/donate/esmeralda-villeda-1" rel="noopener noreferrer" target="_blank"><span data-i18n="nav.donate">Donate</span><svg aria-hidden="true" class="e-arrow" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></svg></a></div>
 </nav>
 <div class="e-header-controls">
+<nav class="e-header-social" aria-label="Follow Esmeralda on social media" data-i18n-aria-label="nav.social.label"><a href="https://www.facebook.com/EsmeraldaForNLV/" target="_blank" rel="noopener noreferrer" aria-label="Esmeralda Villeda on Facebook (opens in a new tab)" data-i18n-aria-label="social.facebook.aria"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="https://www.instagram.com/esmeraldafornlv/" target="_blank" rel="noopener noreferrer" aria-label="Esmeralda Villeda on Instagram (opens in a new tab)" data-i18n-aria-label="social.instagram.aria"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".9" fill="currentColor" stroke="none"/></svg></a><a href="https://www.youtube.com/@EsmeforNLV" target="_blank" rel="noopener noreferrer" aria-label="Esmeralda Villeda on YouTube (opens in a new tab)" data-i18n-aria-label="social.youtube.aria"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"/></svg></a></nav>
 <div aria-label="Website language" class="e-language-switch" data-i18n-aria-label="nav.language" role="group">
 <button aria-label="Read the website in English" aria-pressed="true" data-i18n-aria-label="nav.english" data-set-language="en" disabled="" type="button">EN</button>
 <button aria-label="Read the website in Spanish" aria-pressed="false" data-i18n-aria-label="nav.spanish" data-set-language="es" disabled="" type="button">ES</button>
@@ -1334,7 +1367,7 @@
     const intentNotice = root.querySelector('[data-form-intent]');
     const announcement = root.querySelector('[data-language-announcement]');
     const progress = root.querySelector('[data-reading-progress]');
-    const narrow = window.matchMedia('(max-width: 1100px)');
+    const narrow = window.matchMedia('(max-width: 1280px)');
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
     const storageKey = config.languageStorageKey || 'esme.language';
     const defaultLanguage = validLanguage(config.defaultLanguage) ? config.defaultLanguage : 'en';
