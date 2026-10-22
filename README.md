@@ -4,6 +4,17 @@ Static, bilingual (English/Spanish) single-page website demo for the Esmeralda V
 
 **Demo URL once Pages is enabled:** https://hustlescientist.github.io/esme4nlv/
 
+## Official social profiles (October 22, 2026)
+
+The footer now includes a bilingual **Follow Esmeralda / Sigue a Esmeralda** social panel with clearly labeled, icon-based links. The responsive mobile navigation has a compact three-icon group for quick access.
+
+- Facebook: https://www.facebook.com/EsmeraldaForNLV/
+- Instagram: https://www.instagram.com/esmeraldafornlv/
+- YouTube: https://www.youtube.com/@EsmeforNLV
+
+All three links open in a new tab with accessible English/Spanish labels. The changes are in `main/index.html`, `main/GHL-PASTE-IN.html`, and `gh-pages/index.html`, while preserving existing content, the EN/ES toggle, and the HighLevel form. **To publish on esmefornlv.com via GoHighLevel, replace its single custom-code block with the updated `GHL-PASTE-IN.html` and republish.** GitHub Pages deploys separately from GoHighLevel.
+
+
 ## GitHub Pages configuration — no custom GitHub Actions
 
 This repository contains two branches:
