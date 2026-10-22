@@ -4,6 +4,18 @@ Static, bilingual (English/Spanish) single-page website demo for the Esmeralda V
 
 **Demo URL once Pages is enabled:** https://hustlescientist.github.io/esme4nlv/
 
+## Header social navigation (October 22, 2026)
+
+The primary sticky header now displays Facebook, Instagram and YouTube as inline SVG icons beside the existing nav, English/Spanish switch, and Donate control. The icons use the campaign's square styling, burgundy hover feedback and visible keyboard focus, with bilingual accessible labels. All links use the official campaign profile URLs supplied for the project and open in a new tab:
+
+- Facebook: https://www.facebook.com/EsmeraldaForNLV/
+- Instagram: https://www.instagram.com/esmeraldafornlv/
+- YouTube: https://www.youtube.com/@EsmeforNLV
+
+Responsive behavior: above 1280px, the icons sit beside the desktop navigation; from 741px through 1280px, the full navigation collapses to its hamburger menu while the social icons remain visible in the top bar; at 740px and below, they move to the **beginning of the expanded mobile menu** to avoid crowding the candidate logo and EN/ES controls. The responsive CSS breakpoint and JavaScript menu behavior are aligned at 1280px.
+
+Both `main/index.html` and the single-block `GHL-PASTE-IN.html` are updated. The `gh-pages/index.html` preview is updated independently; republishing the GoHighLevel Custom Code block is still needed for the live `esmefornlv.com` site.
+
 ## Official social profiles (October 22, 2026)
 
 The footer now includes a bilingual **Follow Esmeralda / Sigue a Esmeralda** social panel with clearly labeled, icon-based links. The responsive mobile navigation has a compact three-icon group for quick access.
